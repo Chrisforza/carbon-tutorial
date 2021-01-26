@@ -1,0 +1,4 @@
+diff a/src/content/RepoPage/RepoPage.js b/src/content/RepoPage/RepoPage.js	(rejected hunks)
+@@ -71 +71 @@ const RepoPage = () => {
+-}
++};

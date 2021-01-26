@@ -1,0 +1,96 @@
+diff a/src/content/RepoPage/RepoTable.js b/src/content/RepoPage/RepoTable.js	(rejected hunks)
+@@ -17,37 +17,22 @@ const RepoTable = ({ rows, headers }) => {
+-    return (
+-      <DataTable
+-        rows={rows}
+-        headers={headers}
+-        render={({
+-          rows,
+-          headers,
+-          getHeaderProps,
+-          getRowProps,
+-          getTableProps,
+-        }) => (
+-          <TableContainer
+-            title="Carbon Repositories"
+-            description="A collection of public Carbon repositories.">
+-            <Table {...getTableProps()}>
+-              <TableHead>
+-                <TableRow>
+-                  <TableExpandHeader />
+-                  {headers.map(header => (
+-                    <TableHeader {...getHeaderProps({ header })}>
+-                      {header.header}
+-                    </TableHeader>
+-                  ))}
+-                </TableRow>
+-              </TableHead>
+-              <TableBody>
+-                {rows.map(row => (
+-                  <React.Fragment key={row.id}>
+-                    <TableExpandRow {...getRowProps({ row })}>
+-                      {row.cells.map(cell => (
+-                        <TableCell key={cell.id}>{cell.value}</TableCell>
+-                      ))}
+-                    </TableExpandRow>
+-                    <TableExpandedRow colSpan={headers.length + 1}>
+-                      <p>Row description</p>
+-                    </TableExpandedRow>
+-                  </React.Fragment>
++  return (
++    <DataTable
++      rows={rows}
++      headers={headers}
++      render={({
++        rows,
++        headers,
++        getHeaderProps,
++        getRowProps,
++        getTableProps,
++      }) => (
++        <TableContainer
++          title="Carbon Repositories"
++          description="A collection of public Carbon repositories.">
++          <Table {...getTableProps()}>
++            <TableHead>
++              <TableRow>
++                <TableExpandHeader />
++                {headers.map(header => (
++                  <TableHeader {...getHeaderProps({ header })}>
++                    {header.header}
++                  </TableHeader>
+@@ -55,9 +40,24 @@ const RepoTable = ({ rows, headers }) => {
+-              </TableBody>
+-            </Table>
+-          </TableContainer>
+-        )}
+-      />
+-    );
+-  };
+-  
+-  export default RepoTable;
+\ No newline at end of file
++              </TableRow>
++            </TableHead>
++            <TableBody>
++              {rows.map(row => (
++                <React.Fragment key={row.id}>
++                  <TableExpandRow {...getRowProps({ row })}>
++                    {row.cells.map(cell => (
++                      <TableCell key={cell.id}>{cell.value}</TableCell>
++                    ))}
++                  </TableExpandRow>
++                  <TableExpandedRow colSpan={headers.length + 1}>
++                    <p>Row description</p>
++                  </TableExpandedRow>
++                </React.Fragment>
++              ))}
++            </TableBody>
++          </Table>
++        </TableContainer>
++      )}
++    />
++  );
++};
++
++export default RepoTable;

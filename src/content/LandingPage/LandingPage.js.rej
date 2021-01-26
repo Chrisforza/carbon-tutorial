@@ -1,0 +1,34 @@
+diff a/src/content/LandingPage/LandingPage.js b/src/content/LandingPage/LandingPage.js	(rejected hunks)
+@@ -48,2 +48,2 @@ const LandingPage = () => {
+-                      products and experiences. With the IBM Design Language
+-                      as its foundation, the system consists of working code,
++                      products and experiences. With the IBM Design Language as
++                      its foundation, the system consists of working code,
+@@ -69,2 +69,2 @@ const LandingPage = () => {
+-                    Rapidly build beautiful and accessible experiences. The Carbon kit
+-                    contains all resources you need to get started.
++                    Rapidly build beautiful and accessible experiences. The
++                    Carbon kit contains all resources you need to get started.
+@@ -79,2 +79,2 @@ const LandingPage = () => {
+-                    Carbon provides styles and components in Vanilla, React, Angular,
+-                    and Vue for anyone building on the web.
++                    Carbon provides styles and components in Vanilla, React,
++                    Angular, and Vue for anyone building on the web.
+@@ -89,7 +89,7 @@ const LandingPage = () => {
+-  <div className="bx--col-md-4 bx--col-lg-4">
+-    <h3 className="landing-page__label">The Principles</h3>
+-  </div>
+-  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
+-  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
+-  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
+-</div>
++        <div className="bx--col-md-4 bx--col-lg-4">
++          <h3 className="landing-page__label">The Principles</h3>
++        </div>
++        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
++        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
++        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
++      </div>
+@@ -98 +98 @@ const LandingPage = () => {
+-}
++};
